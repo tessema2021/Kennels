@@ -1,41 +1,44 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "../Home"
-import { AnimalCard } from "./animal/AnimalCard"
-import { EmployeeCard } from "./Employees/EmployeeCard"
-import { LocatoinCard } from "./Locations/LocationCard"
-import { CustomerCard } from "./Customers/CustomerCard"
+import { EmployeeList } from "./Employees/EmployeeList"
+import { LocationList } from "./Locations/LocationList"
+import { CustomerList } from "./Customers/CustomerList"
+import { AnimalList } from "./animal/AnimalList"
 
-export const ApplicationViews = () => {
+export const ApplicationViews = ({ isAdmin, myUser }) => {
     return (
         <>
             {/* Render the location list when http://localhost:3000/ */}
             <Route exact path="/">
-                <Home />
+                <Home isAdmin={isAdmin} myUser={myUser} />
             </Route>
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route path="/animals">
-                <AnimalCard />
+                <AnimalList />
             </Route>
 
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route path="/employees">
-                <EmployeeCard />
+                <EmployeeList />
+
 
             </Route>
 
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route path="/customers">
-                <CustomerCard />
+                <CustomerList />
+
 
             </Route>
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route path="/locations">
-                <LocatoinCard />
+                <LocationList />
+
 
             </Route>
         </>
