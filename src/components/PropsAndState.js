@@ -1,12 +1,15 @@
 import React, { useState } from "react"
 import "./PropsAndState.css"
 
-export const PropsAndState = ({ yourName, day }) => {
+export const PropsAndState = ({ myUser }) => {
     let [countClicks, setCountClicks] = useState(0)
     let [colorIndex, setColoeIndex] = useState(0);
     let [saveNow, setSaveNow] = useState(false);
 
     const allColors = ['red', 'blue', 'orange'];
+
+    const Today = new Date(Date.now());
+    const date = Today.toDateString();
 
 
 
@@ -35,8 +38,9 @@ export const PropsAndState = ({ yourName, day }) => {
 
     return (
         <>
-            <h3>Welcome, {yourName} </h3>
-            <p>Today is {day}</p>
+            <h3>Welcome, {myUser.name} and {myUser.pet} </h3>
+            <p>Today is Wonderful</p>
+            <p>Today is {date}</p>
             <p className={allColors[colorIndex]}>{countClicks}</p>
             <button onClick={(handleClick)}>Click Me</button>
             <hr />
