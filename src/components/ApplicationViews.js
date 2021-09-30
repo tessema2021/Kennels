@@ -20,7 +20,7 @@ export const ApplicationViews = ({ isAdmin, myUser }) => {
             </Route>
 
 
-            {/* Render the animal list when http://localhost:3000/animals */}
+            {/* Render the animal list when http://localhost:3000/employees */}
             <Route path="/employees">
                 <EmployeeList />
 
@@ -28,14 +28,14 @@ export const ApplicationViews = ({ isAdmin, myUser }) => {
             </Route>
 
 
-            {/* Render the animal list when http://localhost:3000/animals */}
+            {/* Render the animal list when http://localhost:3000/customers */}
             <Route path="/customers">
                 <CustomerList />
 
 
             </Route>
 
-            {/* Render the animal list when http://localhost:3000/animals */}
+            {/* Render the animal list when http://localhost:3000/locations */}
             <Route path="/locations">
                 <LocationList />
 
