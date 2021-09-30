@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./PropsAndState.css"
+import { QuoteCard } from "./quotes/quotes"
 
 export const PropsAndState = ({ myUser }) => {
     let [countClicks, setCountClicks] = useState(0)
@@ -39,6 +40,7 @@ export const PropsAndState = ({ myUser }) => {
     return (
         <>
             <h3>Welcome, {myUser.name} and {myUser.pet} </h3>
+            <QuoteCard />
             <p>Today is Wonderful</p>
             <p>Today is {date}</p>
             <p className={allColors[colorIndex]}>{countClicks}</p>
