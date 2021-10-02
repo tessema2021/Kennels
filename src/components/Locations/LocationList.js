@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAllLocations } from '../../modules/LocationManager';
+import { deleteLocation, getAllLocations } from '../../modules/LocationManager';
 import { LocationCard } from './LocationCard';
 
 
@@ -15,13 +15,19 @@ export const LocationList = () => {
         });
     };
 
+    const handleDeleteLocation = id => {
+        deleteLocation(id)
+            .then(getLocations);
+
+    }
+
     useEffect(() => {
         getLocations();
     }, []);
 
     return (
         <div className="container-cards">
-            {locations.map(location => <LocationCard location={location} />)}
+            {locations.map(location => <LocationCard key={location.id} location={location} handleDeleteLocation={handleDeleteLocation} />)}
         </div>
     );
 };

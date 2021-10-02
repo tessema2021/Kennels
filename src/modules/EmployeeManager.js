@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:5002"
 
 export const getEmployeeById = (employeeId) => {
     //be sure your animals have good data and related to a location and customer
-    return fetch(`${remoteURL}/employees/${employeeId}?_expand=location&_expand=customer`)
+    return fetch(`${remoteURL}/employees/${employeeId}?_expand=location&_expand=animal`)
         .then(res => res.json())
 
 }
@@ -10,4 +10,12 @@ export const getEmployeeById = (employeeId) => {
 export const getAllEmployees = () => {
     return fetch(`${remoteURL}/employees`)
         .then(res => res.json())
+}
+
+
+
+export const deleteEmployee = (id) => {
+    return fetch(`${remoteURL}/employees/${id}`, {
+        method: "DELETE"
+    }).then(result => result.json())
 }

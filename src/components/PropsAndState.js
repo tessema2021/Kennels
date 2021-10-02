@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./PropsAndState.css"
-import { QuoteCard } from "./quotes/quotes"
+import { QuoteCard } from "./qoutes/quotes"
 
 export const PropsAndState = ({ myUser }) => {
     let [countClicks, setCountClicks] = useState(0)

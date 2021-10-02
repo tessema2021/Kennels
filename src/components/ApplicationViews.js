@@ -5,6 +5,9 @@ import { EmployeeList } from "./Employees/EmployeeList"
 import { LocationList } from "./Locations/LocationList"
 import { CustomerList } from "./Customers/CustomerList"
 import { AnimalList } from "./animal/AnimalList"
+import { AnimalDetail } from "./animal/AnimalDetail"
+import { CustomerDetail } from "./Customers/CustomerDetail"
+import { EmployeeDetail } from "./Employees/EmployeeDetail"
 
 export const ApplicationViews = ({ isAdmin, myUser }) => {
     return (
@@ -15,24 +18,40 @@ export const ApplicationViews = ({ isAdmin, myUser }) => {
             </Route>
 
             {/* Render the animal list when http://localhost:3000/animals */}
-            <Route path="/animals">
+            <Route exact path="/animals">
                 <AnimalList />
             </Route>
 
 
+            <Route path="/animals/:animalId(\d+)">
+                <AnimalDetail />
+            </Route>
+
+            {/*
+  This is a new route to handle a URL with the following pattern:
+  http://localhost:3000/animals/1
+
+  It will not handle the following URL because the `(\d+)`
+  matches only numbers after the final slash in the URL
+  http://localhost:3000/animals/jack
+*/}
             {/* Render the animal list when http://localhost:3000/employees */}
-            <Route path="/employees">
+            <Route exact path="/employees">
                 <EmployeeList />
-
-
             </Route>
 
 
+            <Route path="/employees/:employeeId(\d+)">
+                <EmployeeDetail />
+            </Route>
+
             {/* Render the animal list when http://localhost:3000/customers */}
-            <Route path="/customers">
+            <Route exact path="/customers">
                 <CustomerList />
+            </Route>
 
-
+            <Route path="/customers/:customerId(\d+)">
+                <CustomerDetail />
             </Route>
 
             {/* Render the animal list when http://localhost:3000/locations */}
