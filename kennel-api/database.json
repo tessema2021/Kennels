@@ -13,37 +13,38 @@
             "breed": "German Shepherd",
             "customerId": 1,
             "locationId": 1
-        },
-        {
-            "id": 3,
-            "name": "Esme",
-            "breed": "Pitbull",
-            "customerId": 1,
-            "locationId": 2
         }
     ],
     "customers": [
         {
             "id": 1,
             "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
+            "address": "7002 Chestnut Ct",
+            "locatoinId": 1,
+            "animalId": 1
         },
         {
             "id": 2,
             "name": "Martha Legesse",
-            "address": "6543 brassoak Ct"
+            "address": "6543 brassoak Ct",
+            "locatoinId": 1,
+            "animalId": 1
         }
     ],
     "employees": [
         {
             "id": 1,
             "name": "William Joseph",
-            "address": "8422 Johnson Pike"
+            "address": "8422 Johnson Pike",
+            "locationId": 1,
+            "customerId": 1
         },
         {
             "id": 2,
             "name": "Bereket Abebe",
-            "address": "8434 Wilson Pike"
+            "address": "8434 Wilson Pike",
+            "locationId": 2,
+            "customerId": 2
         }
     ],
     "locations": [
@@ -54,8 +55,8 @@
         },
         {
             "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
+            "name": "Nashville North",
+            "address": "8422 Johnson Pike"
         }
     ]
 }

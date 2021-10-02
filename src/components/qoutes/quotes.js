@@ -23,11 +23,11 @@ export const QuoteCard = () => {
 
     useEffect(() => {
         getQuotes();
-    }, []);
+    }, []);  // run only one time because dependancy array is empty
 
     useEffect(() => {
         pickQuote()
-    }, [quotes]);
+    }, [quotes]);  // once there is quote run pickQuote again
 
     return (
         <section className="quote">
