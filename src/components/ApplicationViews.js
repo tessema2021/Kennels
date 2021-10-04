@@ -8,6 +8,7 @@ import { AnimalList } from "./animal/AnimalList"
 import { AnimalDetail } from "./animal/AnimalDetail"
 import { CustomerDetail } from "./Customers/CustomerDetail"
 import { EmployeeDetail } from "./Employees/EmployeeDetail"
+import { LocationDetail } from "./Locations/LocationDetail"
 
 export const ApplicationViews = ({ isAdmin, myUser }) => {
     return (
@@ -55,10 +56,11 @@ export const ApplicationViews = ({ isAdmin, myUser }) => {
             </Route>
 
             {/* Render the animal list when http://localhost:3000/locations */}
-            <Route path="/locations">
+            <Route exact path="/locations">
                 <LocationList />
-
-
+            </Route>
+            <Route path="/locations/:locationId(\d+)">
+                <LocationDetail />
             </Route>
         </>
     )
