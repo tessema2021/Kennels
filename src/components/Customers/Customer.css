@@ -5,6 +5,7 @@
   }
   
   .customer {
+      background-color: peru;
       flex-basis: 28%;
       margin: 1em;
       padding: 1em;

@@ -20,15 +20,15 @@
             "id": 1,
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct",
-            "locatoinId": 1,
+            "locationId": 1,
             "animalId": 1
         },
         {
             "id": 2,
             "name": "Martha Legesse",
             "address": "6543 brassoak Ct",
-            "locatoinId": 1,
-            "animalId": 1
+            "locationId": 2,
+            "animalId": 2
         }
     ],
     "employees": [
@@ -37,26 +37,30 @@
             "name": "William Joseph",
             "address": "8422 Johnson Pike",
             "locationId": 1,
-            "customerId": 1
+            "animalId": 1
         },
         {
             "id": 2,
             "name": "Bereket Abebe",
             "address": "8434 Wilson Pike",
             "locationId": 2,
-            "customerId": 2
+            "animalId": 2
         }
     ],
     "locations": [
         {
             "id": 1,
             "name": "Nashville North",
-            "address": "8422 Johnson Pike"
+            "address": "8422 Johnson Pike",
+            "customerId": 1,
+            "animalId": 1
         },
         {
             "id": 2,
             "name": "Nashville North",
-            "address": "8422 Johnson Pike"
+            "address": "8422 Johnson Pike",
+            "customerId": 2,
+            "animalId": 2
         }
     ]
 }
