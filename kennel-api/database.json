@@ -2,10 +2,10 @@
     "animals": [
         {
             "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 1
+            "name": "doodles  of doodles",
+            "breed": "Poodle of poodle",
+            "locationId": 1,
+            "customerId": 1
         },
         {
             "id": 2,
@@ -21,14 +21,30 @@
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct",
             "locationId": 1,
-            "animalId": 1
+            "animalId": 1,
+            "email": "hana@gmail.com"
         },
         {
             "id": 2,
             "name": "Martha Legesse",
             "address": "6543 brassoak Ct",
             "locationId": 2,
-            "animalId": 2
+            "animalId": 2,
+            "email": "martha@gmail.com"
+        },
+        {
+            "name": "",
+            "address": "",
+            "locationId": 1,
+            "animalId": 1,
+            "id": 3
+        },
+        {
+            "name": "gh",
+            "address": "fdfdf",
+            "locationId": 1,
+            "animalId": 1,
+            "id": 5
         }
     ],
     "employees": [
