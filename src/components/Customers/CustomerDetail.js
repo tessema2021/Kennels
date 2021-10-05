@@ -41,6 +41,7 @@ export const CustomerDetail = () => {
             {/* What's up with the question mark???? See below.*/}
             <div className="customer__location">Location: {customer.location}</div>
             <div className="customer__owner">Animal: {customer.animal}</div>
+            {isLoading ? <p>I am still loading </p> : <p>Here now</p>}
             <button type="button" disabled={isLoading} onClick={handleDelete}>
                 Discharge
             </button>
