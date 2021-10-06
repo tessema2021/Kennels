@@ -15,16 +15,8 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { AnimalEditForm } from "./animal/AnimalEditForm"
 
-export const ApplicationViews = ({ isAdmin, myUser }) => {
+export const ApplicationViews = ({ isAdmin, myUser, setAuthUser, isAuthenticated }) => {
 
-
-
-    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
-
-    const setAuthUser = (user) => {
-        sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-    }
 
 
     return (

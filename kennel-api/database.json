@@ -13,6 +13,20 @@
             "breed": "German Shepherd",
             "customerId": 1,
             "locationId": 1
+        },
+        {
+            "id": 3,
+            "name": "Beru",
+            "breed": "German Shepherd",
+            "customerId": 1,
+            "locationId": 2
+        },
+        {
+            "id": 4,
+            "name": "Goshu",
+            "breed": "Poodle",
+            "customerId": 2,
+            "locationId": 1
         }
     ],
     "customers": [
@@ -33,18 +47,9 @@
             "email": "martha@gmail.com"
         },
         {
-            "name": "",
-            "address": "",
-            "locationId": 1,
-            "animalId": 1,
-            "id": 3
-        },
-        {
-            "name": "gh",
-            "address": "fdfdf",
-            "locationId": 1,
-            "animalId": 1,
-            "id": 5
+            "email": "tessema@gmail.com",
+            "name": "tessema fuchere",
+            "id": 6
         }
     ],
     "employees": [
