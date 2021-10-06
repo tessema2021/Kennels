@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./PropsAndState.css"
 import { QuoteCard } from "./qoutes/quotes"
 
-export const PropsAndState = ({ myUser }) => {
+export const PropsAndState = () => {
     let [countClicks, setCountClicks] = useState(0)
     let [colorIndex, setColoeIndex] = useState(0);
     let [saveNow, setSaveNow] = useState(false);
@@ -39,7 +39,7 @@ export const PropsAndState = ({ myUser }) => {
 
     return (
         <>
-            <h3>Welcome, {myUser.name} and {myUser.pet} </h3>
+            <h3>Welcome  </h3>
             <QuoteCard />
             <p>Today is Wonderful</p>
             <p>Today is {date}</p>
